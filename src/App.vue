@@ -1,30 +1,44 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import {
+  NConfigProvider,
+  NDialogProvider,
+  NMessageProvider
+} from 'naive-ui';
+import store from './store/store';
+import hljs from 'highlight.js/lib/core'
+import cpp from 'highlight.js/lib/languages/cpp'
+
+hljs.registerLanguage('cpp', cpp)
+
+store.state.display.isMobile = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase());
+
+const themeOverrides = {
+  common: {
+    "primaryColor": "#4350FFFF",
+    "primaryColorHover": "#747EFEFF",
+    "primaryColorPressed": "#182084FF",
+    "primaryColorSuppl": "#3B44BEFF",
+  },
+};
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <n-config-provider :theme-overrides="themeOverrides" :hljs="hljs">
+    <n-dialog-provider>
+      <n-message-provider>
+        <div class="app">
+          <router-view />
+        </div>
+      </n-message-provider>
+    </n-dialog-provider>
+  </n-config-provider>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+<style lang="less">
+@import "./style.css";
+
+#app {
+  margin: 0 auto;
+  padding: 0;
 }
 </style>
