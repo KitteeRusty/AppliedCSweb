@@ -34,10 +34,7 @@ function handleRoutesChange(action: 0 | 1 | 2 | 3 | 4) {
             router.push({ name: "about" });
             break;
         case 3:
-            router.push({ name: "competition" })
-            break;
-        case 4:
-            router.push({ name: "activity" })
+            router.push({ name: "contact" })
             break;
         default:
             break;
@@ -52,9 +49,9 @@ function handleRoutesChange(action: 0 | 1 | 2 | 3 | 4) {
                 <n-flex justify="end" size="large">
                     <n-button text @click="handleRoutesChange(0)">Home</n-button>
                     <n-button text @click="handleRoutesChange(1)">Project</n-button>
-                    <n-button text @click="handleRoutesChange(3)">Competition</n-button>
-                    <n-button text @click="handleRoutesChange(4)">Activity</n-button>
+                    <n-button text @click="handleRoutesChange(3)">Contact</n-button>
                     <n-button text @click="handleRoutesChange(2)">About</n-button>
+
                 </n-flex>
             </n-layout-header>
             <n-layout-content style="min-height: calc(100vh - 62px);background-color: none;">
