@@ -12,7 +12,6 @@ import {
   NGradientText, NEllipsis, NDivider, NCarousel
 } from 'naive-ui';
 import router from '../../router/router';
-import { projects } from '../project/project';
 
 const contentRef = ref<string | null>(null);
 
@@ -28,7 +27,7 @@ function initial() {
 </script>
 
 <template>
-  
+    <div>hello</div>
 </template>
 
 <style>
