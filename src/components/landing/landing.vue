@@ -34,7 +34,7 @@ var text_index = ref(2);
       <img style="max-width: 720px;" src="/logo2.png" alt="" :z-index="2">
       <div style="text-align: center;" :z-index="1"><n-button round
           style="background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);"
-          @click="router.push({ name: 'projects' })">
+          @click="router.push({ name: 'contacts' })">
           <x
             style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
             Join
