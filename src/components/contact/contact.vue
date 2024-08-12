@@ -10,7 +10,7 @@ import { NImage, NGrid, NGi } from 'naive-ui';
                 <n-gi style="max-width: 300;">
                     <div class="subheading">As a student...</div>
                     <div><b>Official Wechat Group</b></div>
-                    <n-image width="300" src="/images/qr.png"></n-image>
+                    <n-image width="300" src="/AppliedCSweb/images/qr.png"></n-image>
                 </n-gi>
                 <n-gi style="max-width: 300;">
                     <div class="subheading">As a lecturer...</div>
