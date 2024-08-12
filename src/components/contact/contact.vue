@@ -3,7 +3,7 @@ import { NImage, NGrid, NGi } from 'naive-ui';
 </script>
 <template>
     <div style="background-image: linear-gradient(to top, #f65aca 0%, #a6c1ee 100%); padding-bottom: 200px;">
-        <div class="heading" style="padding-bottom: 50px;">Join Us</div>
+        <div class="heading" style="padding-bottom: 100px;">Join Us</div>
         <div
             style="padding-left: 100px; padding-right: 100px; display: flex; justify-content: center; text-align: center;">
             <n-grid :cols="2" x-gap="30" style="align-items: baseline;">
