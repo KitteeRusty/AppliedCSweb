@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { NImage, NGrid, NGi, NFlex } from 'naive-ui';
+import { NImage, NGrid, NGi } from 'naive-ui';
 </script>
 <template>
     <div style="background-image: linear-gradient(to top, #f65aca 0%, #a6c1ee 100%); padding-bottom: 200px;">

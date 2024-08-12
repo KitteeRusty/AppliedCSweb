@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import {
-  NButton, NIcon, NImage, NGrid, NCard, NGi, NEllipsis, NFloatButton, NTimeline, NTimelineItem
+  NButton, NIcon, NImage, NGrid, NGi, NEllipsis, NFloatButton, NTimeline, NTimelineItem
 } from 'naive-ui';
 import router from '../../router/router';
 
