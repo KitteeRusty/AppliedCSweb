@@ -38,7 +38,6 @@ const themeOverrides = {
 @import "./style.css";
 
 #app {
-  margin: 0 auto;
   padding: 0;
 }
 </style>

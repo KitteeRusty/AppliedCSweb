@@ -28,13 +28,13 @@ function handleRoutesChange(action: 0 | 1 | 2 | 3 | 4) {
             router.push({ name: "landing" });
             break;
         case 1:
-            router.push({ name: "project" });
+            router.push({ name: "projects" });
             break;
         case 2:
             router.push({ name: "about" });
             break;
         case 3:
-            router.push({ name: "contact" })
+            router.push({ name: "contacts" })
             break;
         default:
             break;
@@ -44,27 +44,27 @@ function handleRoutesChange(action: 0 | 1 | 2 | 3 | 4) {
 
 <template>
     <div>
-        <n-layout>
-            <n-layout-header style="color:rgba(22, 8, 37, 1) ; max-width: 960px; margin: 0 auto; padding: 24px 0">
-                <n-flex>
+        <n-layout >
+            <n-layout-header style="background-color:rgb(20, 8, 30) ; margin: 0 auto; padding: 12px 0; padding-top: px;">
+                <n-flex justify="space-around">
                     <div>
-                        <img src="logo1" alt="">
+                        <img style="max-width: 200px;" src="/public/logo1.png" alt="">
                     </div>
                     <n-flex justify="end" size="large">
-                        <n-button text @click="handleRoutesChange(0)">Home</n-button>
-                        <n-button text @click="handleRoutesChange(1)">Project</n-button>
-                        <n-button text @click="handleRoutesChange(3)">Contact</n-button>
-                        <n-button text @click="handleRoutesChange(2)">About</n-button>
+                        <n-button style="color:#C705FF; font-weight: bold; padding: 12px;" text @click="handleRoutesChange(0)">Home</n-button>
+                        <n-button style="color:#C705FF; font-weight: bold; padding: 12px;" text @click="handleRoutesChange(1)">Project</n-button>
+                        <n-button style="color:#C705FF; font-weight: bold; padding: 12px;" text @click="handleRoutesChange(3)">Contact</n-button>
+                        <n-button style="color:#C705FF; font-weight: bold; padding: 12px;" text @click="handleRoutesChange(2)">About</n-button>
 
                     </n-flex>
                 </n-flex>
 
             </n-layout-header>
-            <n-layout-content style="min-height: calc(100vh - 62px);background-color: none;">
+            <n-layout-content style="min-height: calc(100vh - 62px); background-color: none;">
                 <router-view />
             </n-layout-content>
             <n-layout-footer inverted>
-                <n-flex style="max-width: 960px; margin: 0 auto; padding: 24px" :align="'center'" :justify="'end'">
+                <n-flex style="max-width: 960px; margin: 0 auto; padding: 24px 0" :align="'center'" :justify="'end'">
                     <n-flex :align="'center'">
                         <div>Contact me through: </div>
                         <n-icon :size="20">

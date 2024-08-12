@@ -19,11 +19,20 @@ const routes: Array<RouteRecordRaw> = [
                 component: () => store.state.display.isMobile ? import('../components/project/mProject.vue') : import('../components/project/project.vue')
             },
             {
-                path: "",
-                name: "landing",
+                path: "contacts",
+                name: "contacts",
+                component: () => store.state.display.isMobile ? import('../components/contact/mContact.vue') : import('../components/contact/contact.vue')
+            },
+            {
+                path: "about",
+                name: "about",
                 component: () => store.state.display.isMobile ? import('../components/about/mAbout.vue') : import('../components/about/about.vue')
             }
         ]
+    },
+    {
+        path: "/",
+        redirect: "/appliedcs" // 默认根路径重定向到 '/appliedcs'
     },
 ];
 
