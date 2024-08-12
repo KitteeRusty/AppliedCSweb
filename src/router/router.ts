@@ -4,7 +4,7 @@ import store from "../store/store";
 
 const routes: Array<RouteRecordRaw> = [
     {
-        path: "/appliedcs",
+        path: "/AppliedCSweb/appliedcs",
         name: "applied-cs",
         component: () => store.state.display.isMobile ? import('../components/mLayout.vue') : import('../components/layout.vue'),
         children: [
