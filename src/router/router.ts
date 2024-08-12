@@ -4,7 +4,7 @@ import store from "../store/store";
 
 const routes: Array<RouteRecordRaw> = [
     {
-        path: "/AppliedcSweb",
+        path: "/AppliedCSweb/",
         name: "applied-cs",
         component: () => store.state.display.isMobile ? import('../components/mLayout.vue') : import('../components/layout.vue'),
         children: [
@@ -25,10 +25,10 @@ const routes: Array<RouteRecordRaw> = [
             }
         ]
     },
-    {
-        path: "/",
-        redirect: "/appliedcs" // 默认根路径重定向到 '/appliedcs'
-    },
+    // {
+    //     path: "/",
+    //     redirect: "/appliedcs" // 默认根路径重定向到 '/appliedcs'
+    // },
 ];
 
 const router = createRouter({

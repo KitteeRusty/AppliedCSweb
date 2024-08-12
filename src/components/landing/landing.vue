@@ -31,7 +31,7 @@ var text_index = ref(2);
 <template>
   <div class="background">
     <div style="text-align: center; padding-bottom: 40px;">
-      <img style="max-width: 720px;" src="/images/logo2.png" alt="" :z-index="2">
+      <img style="max-width: 720px;" src="/AppliedCSweb/images/logo2.png" alt="" :z-index="2">
       <div style="text-align: center;" :z-index="1"><n-button round
           style="background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);"
           @click="router.push({ name: 'contacts' })">
@@ -49,7 +49,7 @@ var text_index = ref(2);
     <div style="text-align: center;">_____________________________________________________</div>
     <div class="heading">Who are we?</div>
     <div style="text-align: center;">
-      <div><n-image width="200" src="/images/logo1.png"></n-image></div>
+      <div><n-image width="200" src="/AppliedCSweb/images/logo1.png"></n-image></div>
     </div>
     <div style="text-align: center;">
       <n-ellipsis :tooltip="false" expand-trigger="click" :line-clamp="3"
@@ -138,7 +138,7 @@ var text_index = ref(2);
         <x>We organized lectures about: </x><br>
 
       </div>
-      <n-image width="400px" src="/images/wordcloud.png" />
+      <n-image width="400px" src="/AppliedCSweb/images/wordcloud.png" />
 
     </div>
     <div v-if="text_index === 2" style="text-align: center; justify-content: center; padding: 50px; display: flex;">

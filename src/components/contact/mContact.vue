@@ -10,7 +10,7 @@ import { NImage, NGrid, NGi } from 'naive-ui';
                 <n-gi style="max-width: 300;">
                     <div class="subheading">As a student...</div>
                     <div><b>Official Wechat Group</b></div>
-                    <n-image width="300" src="/images/qr.png"></n-image>
+                    <n-image width="300" src="/AppliedCSweb/images/qr.png"></n-image>
                 </n-gi>
                 <n-gi style="max-width: 300;">
                     <div class="subheading">As a lecturer...</div>
@@ -19,7 +19,7 @@ import { NImage, NGrid, NGi } from 'naive-ui';
                         contact the leader through the Wechat QR code below. The Email address is also given at the
                         bottom of the page.
                     </div>
-                    <n-image width="300" src="/images/qr2.png"></n-image>
+                    <n-image width="300" src="/AppliedCSweb/images/qr2.png"></n-image>
                 </n-gi>
             </n-grid>
         </div>

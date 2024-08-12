@@ -22,7 +22,7 @@ function initial() {
     contentRef.value = "1";
 }
 
-function handleRoutesChange(action: 0 | 1 | 2 ) {
+function handleRoutesChange(action: 0 | 1 | 2) {
     switch (action) {
         case 0:
             router.push({ name: "landing" });
@@ -41,16 +41,20 @@ function handleRoutesChange(action: 0 | 1 | 2 ) {
 
 <template>
     <div>
-        <n-layout >
-            <n-layout-header style="background-color:rgb(20, 8, 30) ; margin: 0 auto; padding: 12px 0; padding-top: px;">
+        <n-layout>
+            <n-layout-header
+                style="background-color:rgb(20, 8, 30) ; margin: 0 auto; padding: 12px 0; padding-top: px;">
                 <n-flex justify="space-around">
                     <div>
-                        <img style="max-width: 200px;" src="/images/logo1.png" alt="">
+                        <img style="max-width: 200px;" src="/AppliedCSweb/images/logo1.png" alt="">
                     </div>
                     <n-flex justify="end" size="large">
-                        <n-button style="color:#C705FF; font-weight: bold; padding: 12px;" text @click="handleRoutesChange(0)">Home</n-button>
-                        <n-button style="color:#C705FF; font-weight: bold; padding: 12px;" text @click="handleRoutesChange(1)">Project</n-button>
-                        <n-button style="color:#C705FF; font-weight: bold; padding: 12px;" text @click="handleRoutesChange(2)">Contact</n-button>
+                        <n-button style="color:#C705FF; font-weight: bold; padding: 12px;" text
+                            @click="handleRoutesChange(0)">Home</n-button>
+                        <n-button style="color:#C705FF; font-weight: bold; padding: 12px;" text
+                            @click="handleRoutesChange(1)">Project</n-button>
+                        <n-button style="color:#C705FF; font-weight: bold; padding: 12px;" text
+                            @click="handleRoutesChange(2)">Contact</n-button>
                     </n-flex>
                 </n-flex>
 
