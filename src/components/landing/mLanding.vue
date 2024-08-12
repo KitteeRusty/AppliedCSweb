@@ -68,7 +68,7 @@ var text_index = ref(2);
       </n-ellipsis>
     </div>
     <div style="text-align: center; padding: 30px; padding-left: 64px; padding-right: 64px;">
-      <n-grid x-gap="12" :cols="3">
+      <n-grid x-gap="12" :cols="1">
         <n-gi class="card">
           <div class="subheading" style="color: #B30024;">Independent Project</div>
           <div class="description" style="color: #B30024;">At AppliedCS Club, we offer a unique opportunity for members
@@ -117,8 +117,8 @@ var text_index = ref(2);
     <div style="text-align: center; justify-content: center; color: grey; font-size: 12px;">(Click on the word to view
       curriculum for each semester)</div>
     <div style="text-align: center; display: flex; justify-content: center;">
-      <div style="overflow: auto;">
-        <n-timeline horizontal size="large" style="text-align: center;">
+      <div style="padding-top: 10px;">
+        <n-timeline size="large" style="text-align: center;">
           <n-timeline-item class="timeline-item" title="AppliedCS Club is founded" content="The first attempt"
             time="2023-2024 Semester 2" @click="text_index = 1" />
           <n-timeline-item class="timeline-item" title="Replanning the curriculum"
@@ -142,7 +142,7 @@ var text_index = ref(2);
 
     </div>
     <div v-if="text_index === 2" style="text-align: center; justify-content: center; padding: 50px; display: flex;">
-      <n-grid :cols="3">
+      <n-grid :cols="1">
         <n-gi class="card" style="color: midnightblue;">
           <div class="subheading">Week 1-4: Introductory Lessons</div>
           <div class="description">
