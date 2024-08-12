@@ -22,11 +22,6 @@ const routes: Array<RouteRecordRaw> = [
                 path: "contacts",
                 name: "contacts",
                 component: () => store.state.display.isMobile ? import('../components/contact/mContact.vue') : import('../components/contact/contact.vue')
-            },
-            {
-                path: "about",
-                name: "about",
-                component: () => store.state.display.isMobile ? import('../components/about/mAbout.vue') : import('../components/about/about.vue')
             }
         ]
     },

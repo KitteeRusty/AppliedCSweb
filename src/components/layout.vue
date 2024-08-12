@@ -22,7 +22,7 @@ function initial() {
     contentRef.value = "1";
 }
 
-function handleRoutesChange(action: 0 | 1 | 2 | 3 | 4) {
+function handleRoutesChange(action: 0 | 1 | 2 ) {
     switch (action) {
         case 0:
             router.push({ name: "landing" });
@@ -31,9 +31,6 @@ function handleRoutesChange(action: 0 | 1 | 2 | 3 | 4) {
             router.push({ name: "projects" });
             break;
         case 2:
-            router.push({ name: "about" });
-            break;
-        case 3:
             router.push({ name: "contacts" })
             break;
         default:
@@ -53,9 +50,7 @@ function handleRoutesChange(action: 0 | 1 | 2 | 3 | 4) {
                     <n-flex justify="end" size="large">
                         <n-button style="color:#C705FF; font-weight: bold; padding: 12px;" text @click="handleRoutesChange(0)">Home</n-button>
                         <n-button style="color:#C705FF; font-weight: bold; padding: 12px;" text @click="handleRoutesChange(1)">Project</n-button>
-                        <n-button style="color:#C705FF; font-weight: bold; padding: 12px;" text @click="handleRoutesChange(3)">Contact</n-button>
-                        <n-button style="color:#C705FF; font-weight: bold; padding: 12px;" text @click="handleRoutesChange(2)">About</n-button>
-
+                        <n-button style="color:#C705FF; font-weight: bold; padding: 12px;" text @click="handleRoutesChange(2)">Contact</n-button>
                     </n-flex>
                 </n-flex>
 
