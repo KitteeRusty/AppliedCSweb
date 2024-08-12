@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "naive-ui": "^2.39.0",
@@ -19,6 +21,7 @@
     "@types/vue": "^2.0.0",
     "@vitejs/plugin-vue": "^5.1.2",
     "@vue/cli-plugin-typescript": "^5.0.8",
+    "gh-pages": "^6.1.1",
     "less": "^4.2.0",
     "typescript": "^5.5.3",
     "vite": "^5.4.0",
