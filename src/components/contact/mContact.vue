@@ -6,7 +6,7 @@ import { NImage, NGrid, NGi } from 'naive-ui';
         <div class="heading" style="padding-bottom: 50px;">Join Us</div>
         <div
             style="padding-left: 100px; padding-right: 100px; display: flex; justify-content: center; text-align: center;">
-            <n-grid :cols="1" x-gap="30" style="align-items: baseline;">
+            <n-grid :cols="1" x-gap="30" style="align-items: baseline; text-align: center; justify-content: center;">
                 <n-gi style="max-width: 300;">
                     <div class="subheading">As a student...</div>
                     <div><b>Official Wechat Group</b></div>

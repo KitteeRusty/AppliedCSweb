@@ -72,7 +72,6 @@ function handleRoutesChange(action: 0 | 1 | 2 ) {
                         </n-icon>
                         <div>{{ "s22360.pan@stu.scie.com.cn" }}</div>
                     </n-flex>
-                    <n-divider vertical />
                     <n-flex :align="'center'">
                         <n-icon :size="20">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
